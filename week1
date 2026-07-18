@@ -9,6 +9,6 @@
 | 层 2 | 探索（Explore） | 寻找远处空旷区域并导航过去 |
 ## 代码实现
 基于论文描述，实现了一个 3 层包容架构仿真，运行效果如下：
-![Brooks 包容架构 3 层仿真](assets/brooks_simulation.gif)
+![Brooks 包容架构 3 层仿真](https://github.com/YueQingyu/cs231n/blob/main/Brooks%20%E5%8C%85%E5%AE%B9%E6%9E%B6%E6%9E%84%203%20%E5%B1%82%E4%BB%BF%E7%9C%9F%EF%BC%88%E5%BD%95%E5%88%B6%2015s%EF%BC%8CESC%20%E9%80%80%E5%87%BA%E8%87%AA%E5%8A%A8%E4%BF%9D%E5%AD%98%20GIF%EF%BC%89%202026-07-18%2013-25-14.mp4)
 
 
