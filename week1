@@ -9,6 +9,19 @@
 | 层 2 | 探索（Explore） | 寻找远处空旷区域并导航过去 |
 ## 代码实现
 基于论文描述，实现了一个 3 层包容架构仿真，运行效果如下：
-![Brooks 包容架构 3 层仿真](https://github.com/YueQingyu/cs231n/blob/main/Brooks%20%E5%8C%85%E5%AE%B9%E6%9E%B6%E6%9E%84%203%20%E5%B1%82%E4%BB%BF%E7%9C%9F%EF%BC%88%E5%BD%95%E5%88%B6%2015s%EF%BC%8CESC%20%E9%80%80%E5%87%BA%E8%87%AA%E5%8A%A8%E4%BF%9D%E5%AD%98%20GIF%EF%BC%89%202026-07-18%2013-25-14.mp4)
+![Brooks 包容架构 3 层仿真]
 
+论文阅读：Learning Dexterous In-Hand Manipulation
+## 论文概要
+该论文用深度强化学习让 Shadow 灵巧手（24 自由度）学会在手中旋转方块到目标方向。
+## 核心方法：
+PPO 算法 + Domain Randomization（域随机化）：在仿真中随机化摩擦力、质量、延迟、噪声等参数，让策略见过各种"可能的世界"，从而实现从仿真到真实机器人的零样本迁移。
+
+论文阅读：Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
+## 论文概要
+提出将大语言模型（PaLM）的可语义推理能力与机器人 affordance 模型的物理可行性结合，使机器人能执行长视野、开放词汇的自然语言指令。
+##核心思想
+每一步选 action 时，同时考虑 LLM 给出的"语义有用性"分数和 affordance 模型给出的"当前可行性"分数，两者相乘作为最终选择依据。
+## 代码实现
+复现验证了 SayCan 的核心算法。在 5×5 GridWorld 仿真中，机器人成功执行"把可乐放到桌上"任务，耗时 10 步。
 
